@@ -1,0 +1,73 @@
+<?php include ("databaseConnection.php"); ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lens | AudioVizzion</title>
+    <link rel="stylesheet" type="text/css" href="devicepage.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+</head>
+
+<body>
+    <div class="background" style="background: url(images/device.jpg); background-size: cover;">
+        <a href="homepage.html">
+            <div class="home"></div>
+        </a>
+        <div class="container lens">
+            <form id="add-form" method="POST" action="addLensToDatabase.php">
+                <p>Add lens</p>
+                <div class="input-field">
+                    <input type="text" name="dName">
+                    <label>Catalog Name</label>
+                </div>
+
+                <div class="input-field">
+                    <textarea rows="3" name="dDescrip"></textarea>
+                    <label>Description</label>
+                </div>
+
+                <div class="input-field">
+                    <select id="aStatus" name="aStatus" style="margin-top: 2%;">
+                        <option value="in-stock">In Stock</option>
+                        <option value="c-ordered">Currently being ordered</option>
+                    </select>
+                    <label>Availability Status</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="lensSerialNo">
+                    <label>Serial Number</label>
+                </div>
+
+                <div class="input-field">
+                    <select id="visionType" name="visionType" style="margin-top: 2%;">
+                        <option value="single-ss">Single vision for short sightedness</option>
+                        <option value="single-ls">Single vision for long sightedness</option>
+                        <option value="progressive">Progressive Lens</option>
+                        <option value="bifocals">Bifocal Lens</option>
+                    </select>
+                    <label>Vision Type</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="tint">
+                    <label>Tint</label>
+                </div>
+
+                <div class="input-field">
+                    <select id="thinnessLevel" name="thinnessLevel" style="margin-top: 2%;">
+                        <option value="u-thin">Ultra-thin</option>
+                        <option value="thin">Thin</option>
+                        <option value="regular">Regular</option>
+                    </select>
+                    <label>Thinness Level</label>
+                </div>
+
+                <input type="submit" value="Add" class="button" id="submit-button">
+                <input type="reset" value="Reset" class="button" id="reset-button">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

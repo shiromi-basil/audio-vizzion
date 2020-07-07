@@ -1,0 +1,136 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/*container holding the image and the text*/
+.background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home {
+  background: url(images/home-icon.png);
+  height: 6%;
+  width: 3%;
+  position: relative;
+  top: 2%;
+  left: 1.5%;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  width: 38%;
+  left: 29%;
+  overflow: auto;
+  padding-right: 1.5%;
+}
+
+.hearing, .frames {
+  top: 8%;
+  height: 82%;
+}
+
+.lens {
+  top: -2%;
+  height: 92%;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 26px;
+  margin-bottom: 2%;
+}
+
+p.error-message {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 24px;
+}
+
+p.success-message {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 23px;
+  margin-bottom: 5%;
+  margin-top: 36%;
+}
+
+p.details {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 2%;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 1%;
+}
+
+label {
+  font-family: Grotesk;
+  color: #333333;
+  font-size: 18px;
+  order: -1;
+  transition: all 0.3s ease-in;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+input:focus + label {
+  transform: translateY(-2px);
+}
+
+input[type="text"],
+select,
+textarea {
+  padding-top: 3%;
+  padding-left: 1%;
+  border-color: transparent;
+  border-bottom: 2px solid #bfbfbf;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: "Neuzeit";
+  font-size: 15px;
+  font-family: sans-serif;
+  width: 100%;
+  background: transparent;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  position: relative;
+  margin-top: 2%;
+  width: 15%;
+  border-radius: 3px;
+  padding: 10px 20px;
+  border: none;
+  font-family: "Teen";
+  font-weight: bold;
+  background: #999999;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #666666;
+  font-family: "Teen";
+  font-weight: bold;
+}
+
+#reset-button {
+  left: 38%;
+}
+
+#submit-button {
+  left: 33%;
+}

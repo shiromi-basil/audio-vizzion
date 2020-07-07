@@ -1,0 +1,164 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background: url(images/homepage.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  color: #000000;
+  text-align: left;
+  height: 100%;
+  width: 55%;
+  padding: 0 5% 5% 5%;
+}
+
+#text1 {
+  font-family: Teen, Futura;
+  top: 40%;
+  font-size: 60px;
+}
+
+#text2 {
+  font-family: Grotesk, Futura;
+  top: 52%;
+  font-size: 19px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#hearing {
+  margin: 32% 78% 0% 0%;
+}
+
+#lens {
+  margin: -3.5% 49.5% 0% 0%;
+}
+
+#frame {
+  margin: -3.5% 21% 0% 0%;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+
+.btn .bottom-box {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  width: 100%;
+  height: 100%;
+  background-color: #8c8c8c;
+  display: block;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.btn .top-box {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 20px 30px 18px 30px;
+  border: 2px solid #0d0d0d;
+  width: 170px;
+}
+
+.btn-dark .top-box {
+  border: 2px solid #fff;
+}
+
+.btn .top-box .name-label {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  color: #0d0d0d;
+  font-size: 12px;
+  line-height: 110%;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.btn:hover .bottom-box {
+  left: 0;
+  top: 0;
+  background-color: #8c8c8c;
+}
+
+.btn:hover .top-box .name-label {
+  color: #0d0d0d;
+}
+
+.btn-border {
+  position: absolute;
+  background-color: #8c8c8c;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.btn:hover .top-box .btn-left-border,
+.btn:hover .top-box .btn-right-border {
+  height: calc(100% + 2px);
+}
+
+.btn:hover .top-box .btn-top-border,
+.btn:hover .top-box .btn-bottom-border {
+  width: calc(100% + 2px);
+}
+
+.btn-left-border {
+  left: -2px;
+  bottom: -2px;
+  width: 2px;
+  height: 0;
+}
+
+.btn-top-border {
+  left: -2px;
+  top: -2px;
+  width: 0;
+  height: 2px;
+}
+
+.btn-right-border {
+  right: -2px;
+  top: -2px;
+  width: 2px;
+  height: 0;
+}
+
+.btn-bottom-border {
+  right: -2px;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+}

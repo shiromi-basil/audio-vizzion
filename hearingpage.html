@@ -1,0 +1,55 @@
+<?php include ("databaseConnection.php"); ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hearing Aid | AudioVizzion</title>
+    <link rel="stylesheet" type="text/css" href="devicepage.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+</head>
+
+<body>
+    <div class="background" style="background: url(images/device.jpg); background-size: cover;">
+        <a href="homepage.html">
+            <div class="home"></div>
+        </a>
+        <div class="container hearing">
+
+            <form id="add-form" method="POST" action="addHearingToDatabase.php">
+                <p>Add hearing aid</p>
+                <div class="input-field">
+                    <input type="text" name="dName">
+                    <label>Catalog Name</label>
+                </div>
+
+                <div class="input-field">
+                    <textarea rows="3" name="dDescrip"></textarea>
+                    <label>Description</label>
+                </div>
+
+                <div class="input-field">
+                    <select id="aStatus" name="aStatus" style="margin-top: 2%;">
+                        <option value="in-stock">In Stock</option>
+                        <option value="c-ordered">Currently being ordered</option>
+                    </select>
+                    <label>Availability Status</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="hdMake">
+                    <label>Make</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="hdModel">
+                    <label>Model</label>
+                </div>
+
+                <input type="submit" value="Add" class="button" id="submit-button">
+                <input type="reset" value="Reset" class="button" id="reset-button">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

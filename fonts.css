@@ -1,0 +1,19 @@
+/*importing font families to be used in the web pages*/
+@font-face {
+    font-family: "futura";
+    src: url("fonts/futura-book.ttf");
+}
+
+@font-face {
+    font-family: "oswald";
+    src: url("fonts/Oswald-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Grotesk";
+    src: url("fonts/URW\ Grotesk\ Light.ttf");
+}
+@font-face {
+    font-family: "Neuzeit";
+    src: url("fonts/NeuzeitSBook.ttf");
+}
