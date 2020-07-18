@@ -33,6 +33,13 @@ Type `localhost/phpmyadmin/` in the browser's address bar. Click on the 'Import'
 Move the project folder to `C:\xampp\htdocs`. Start Apache and SQL in the XAMPP server. Type `localhost/ audio-vizzion/homepage.html` in the browser's address bar.
 
 ## Screenshots
+<img alt="Screenshot 01" src="demo/home-page.png" width="700">
+
+<img alt="Screenshot 02" src="demo/hearing-page.png" width="700">
+
+<img alt="Screenshot 03" src="demo/lens-page.png" width="700">
+
+<img alt="Screenshot 04" src="demo/frame-page.png" width="700">
 
 ## Built With
 * [HTML](https://www.w3.org/html/)
